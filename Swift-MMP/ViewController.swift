@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var homeViewController: HomeViewController!
+    
+//    var mainView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+//        self.mainView = UIView(frame: self.view.frame)
+        self.homeViewController = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "homeVC") as! HomeViewController
+        self.view.addSubview(self.homeViewController.view)
     }
 
     override func didReceiveMemoryWarning() {
