@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C809DD051F66B85400435E26 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809DD041F66B85400435E26 /* Common.swift */; };
 		C88FEFEC1F65AEF600A096ED /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88FEFEB1F65AEF600A096ED /* Home.storyboard */; };
 		C88FEFEF1F65AF6700A096ED /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FEFEE1F65AF6700A096ED /* SideViewController.swift */; };
 		C88FEFF11F65B08200A096ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FEFF01F65B08200A096ED /* HomeViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C809DD041F66B85400435E26 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Common/Common.swift; sourceTree = "<group>"; };
 		C88FEFEB1F65AEF600A096ED /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
 		C88FEFEE1F65AF6700A096ED /* SideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideViewController.swift; path = Controllers/Home/SideViewController.swift; sourceTree = "<group>"; };
 		C88FEFF01F65B08200A096ED /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/Home/HomeViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C809DD031F66B82C00435E26 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C809DD041F66B85400435E26 /* Common.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		C88FEFED1F65AF3600A096ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 		C8E2AE1A1F659A870015F133 /* Swift-MMP */ = {
 			isa = PBXGroup;
 			children = (
+				C809DD031F66B82C00435E26 /* Common */,
 				C88FEFED1F65AF3600A096ED /* Controllers */,
 				C8E2AE1B1F659A870015F133 /* AppDelegate.swift */,
 				C8E2AE1D1F659A870015F133 /* ViewController.swift */,
@@ -283,6 +294,7 @@
 				C8E2AE1E1F659A870015F133 /* ViewController.swift in Sources */,
 				C8E2AE1C1F659A870015F133 /* AppDelegate.swift in Sources */,
 				C88FEFEF1F65AF6700A096ED /* SideViewController.swift in Sources */,
+				C809DD051F66B85400435E26 /* Common.swift in Sources */,
 				C88FEFF11F65B08200A096ED /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

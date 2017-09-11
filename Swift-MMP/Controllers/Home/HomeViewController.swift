@@ -9,6 +9,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    weak var viewController: ViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,9 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func showSideButtonBeTapped(_ sender: Any) {
+        self.viewController.showSide()
+    }
 
     /*
     // MARK: - Navigation

@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record" translatesAutoresizingMaskIntoConstraints="NO" id="AZa-x5-zwG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="1vc-fS-yNE"/>
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCH-Bx-JDZ">
-                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <connections>
                                     <segue destination="W04-8H-H76" kind="embed" id="3F7-P4-Lub"/>
                                 </connections>
@@ -38,7 +38,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="AZa-x5-zwG" secondAttribute="trailing" id="8bC-yR-JcK"/>
                             <constraint firstItem="sCH-Bx-JDZ" firstAttribute="top" secondItem="AZa-x5-zwG" secondAttribute="bottom" id="FpA-J5-HGm"/>
-                            <constraint firstItem="AZa-x5-zwG" firstAttribute="top" secondItem="vYE-Ue-7QN" secondAttribute="top" id="LLb-mf-IhZ"/>
+                            <constraint firstItem="AZa-x5-zwG" firstAttribute="top" secondItem="vYE-Ue-7QN" secondAttribute="top" constant="20" id="LLb-mf-IhZ"/>
                             <constraint firstItem="AZa-x5-zwG" firstAttribute="leading" secondItem="vYE-Ue-7QN" secondAttribute="leading" id="MXv-0W-pGz"/>
                             <constraint firstAttribute="trailing" secondItem="sCH-Bx-JDZ" secondAttribute="trailing" id="Q52-1t-e9b"/>
                             <constraint firstItem="xbo-QS-kwz" firstAttribute="top" secondItem="sCH-Bx-JDZ" secondAttribute="bottom" id="ZPq-TP-Yw4"/>
@@ -74,11 +74,26 @@
                                     <segue destination="BTF-by-Wec" kind="embed" id="b3f-uf-9zc"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdQ-1X-mt9">
+                                <rect key="frame" x="0.0" y="0.0" width="48" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="cZe-tm-omU"/>
+                                    <constraint firstAttribute="height" constant="52" id="xZj-my-eRD"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSideButtonBeTapped:" destination="b8e-BS-qv0" eventType="touchUpInside" id="PQs-EB-cFy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="AdQ-1X-mt9" firstAttribute="top" secondItem="E3o-G3-W7x" secondAttribute="top" id="Kq6-Ve-6ca"/>
                             <constraint firstItem="SU3-uL-n29" firstAttribute="top" secondItem="GWm-Oq-hFk" secondAttribute="bottom" id="Ov8-Cx-vOq"/>
                             <constraint firstItem="GWm-Oq-hFk" firstAttribute="top" secondItem="wcf-xJ-bre" secondAttribute="bottom" id="UES-Rp-mp0"/>
+                            <constraint firstItem="AdQ-1X-mt9" firstAttribute="leading" secondItem="E3o-G3-W7x" secondAttribute="leading" id="aSF-ep-y6a"/>
                             <constraint firstItem="wcf-xJ-bre" firstAttribute="top" secondItem="E3o-G3-W7x" secondAttribute="top" id="kFd-9f-9ri"/>
                             <constraint firstItem="GWm-Oq-hFk" firstAttribute="leading" secondItem="E3o-G3-W7x" secondAttribute="leading" id="tOf-4n-AFe"/>
                             <constraint firstItem="wcf-xJ-bre" firstAttribute="leading" secondItem="E3o-G3-W7x" secondAttribute="leading" id="vl7-vf-QzJ"/>
@@ -104,7 +119,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cdt-JW-Gr6" id="afC-oh-WxP">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -124,7 +139,7 @@
             <objects>
                 <tableViewController id="W04-8H-H76" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="A28-Oy-9nu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -132,7 +147,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PkM-jk-g2Q" id="VGh-Do-ig2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
