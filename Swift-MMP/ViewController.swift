@@ -42,8 +42,7 @@ class ViewController: UIViewController {
         self.blackCover = UIView(frame: self.view.frame)
         self.blackCover.backgroundColor = UIColor.black
         self.blackCover.alpha = 0
-        self.blackCover.isUserInteractionEnabled = true
-        self.blackCover.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(hideSide)))
+        self.blackCover.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideSide)))
         self.view.addSubview(self.blackCover)
     }
 
@@ -54,9 +53,10 @@ class ViewController: UIViewController {
     
     func showSide() {
         print("show")
-        UIView.animate(withDuration: 0.3, delay: 0, options: UIViewAnimationOptions(), animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             self.sideViewController.view.center = CGPoint(x: Common.screenWidth * self.sideViewWidthMultiple * 0.5, y: self.sideViewController.view.center.y)
-            self.blackCover.alpha = 0.5
+            self.blackCover.center = CGPoint(x: self.view.center.x + Common.screenWidth * self.sideViewWidthMultiple, y: self.sideViewController.view.center.y)
+            self.blackCover.alpha = 0.6
         }) { (status) in
             if (status) {}
         }
@@ -64,8 +64,9 @@ class ViewController: UIViewController {
     
     func hideSide() {
         print("hide")
-        UIView.animate(withDuration: 0.3, delay: 0, options: UIViewAnimationOptions(), animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             self.sideViewController.view.center = CGPoint(x: Common.screenWidth * self.sideViewWidthMultiple * -0.5, y: self.sideViewController.view.center.y)
+            self.blackCover.center = self.view.center
             self.blackCover.alpha = 0
         }) { (status) in
             if (status) {}
