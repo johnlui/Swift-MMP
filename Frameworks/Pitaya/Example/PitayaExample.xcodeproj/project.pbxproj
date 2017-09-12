@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46C7CAC21B04AA4000CC3B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C7CAC11B04AA4000CC3B70 /* AppDelegate.swift */; };
+		46C7CAC71B04AA4000CC3B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C7CAC51B04AA4000CC3B70 /* Main.storyboard */; };
+		46C7CAC91B04AA4000CC3B70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46C7CAC81B04AA4000CC3B70 /* Images.xcassets */; };
+		46C7CACC1B04AA4000CC3B70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46C7CACA1B04AA4000CC3B70 /* LaunchScreen.xib */; };
+		B884D1A61E07B7E70008F5AB /* logo@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B884D1A51E07B7E70008F5AB /* logo@2x.jpg */; };
+		C892C3DA1BC24C8E00406ED5 /* Pitaya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C892C3D71BC24C8000406ED5 /* Pitaya.framework */; };
+		C892C3DB1BC24C8E00406ED5 /* Pitaya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C892C3D71BC24C8000406ED5 /* Pitaya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C8CF50521E02CCC00059B9DE /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF50511E02CCC00059B9DE /* RootTableViewController.swift */; };
+		C8E781F91D9506D20083A9F7 /* lvwenhancom.cer in Resources */ = {isa = PBXBuildFile; fileRef = C8E781F81D9506D20083A9F7 /* lvwenhancom.cer */; };
+		C8F84A061E03DCBF005A063C /* ExamplesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F84A051E03DCBF005A063C /* ExamplesViewController.swift */; };
+		C8F84A091E03E485005A063C /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F84A081E03E485005A063C /* SwiftNotice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C892C3D61BC24C8000406ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C892C3D11BC24C8000406ED5 /* Pitaya.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 463712051B04C2050019E1AB;
+			remoteInfo = Pitaya;
+		};
+		C892C3D81BC24C8000406ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C892C3D11BC24C8000406ED5 /* Pitaya.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 463712101B04C2050019E1AB;
+			remoteInfo = PitayaTests;
+		};
+		C892C3DC1BC24C8E00406ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C892C3D11BC24C8000406ED5 /* Pitaya.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 463712041B04C2050019E1AB;
+			remoteInfo = Pitaya;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		463712321B04C4DF0019E1AB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C892C3DB1BC24C8E00406ED5 /* Pitaya.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		46C7CABC1B04AA4000CC3B70 /* PitayaExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitayaExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C7CAC01B04AA4000CC3B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C7CAC11B04AA4000CC3B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46C7CAC61B04AA4000CC3B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46C7CAC81B04AA4000CC3B70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46C7CACB1B04AA4000CC3B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B884D1A51E07B7E70008F5AB /* logo@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "logo@2x.jpg"; path = "../../assets/logo@2x.jpg"; sourceTree = "<group>"; };
+		C892C3D11BC24C8000406ED5 /* Pitaya.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pitaya.xcodeproj; path = ../Pitaya.xcodeproj; sourceTree = "<group>"; };
+		C8CF50511E02CCC00059B9DE /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+		C8E781F81D9506D20083A9F7 /* lvwenhancom.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = lvwenhancom.cer; path = ../assets/lvwenhancom.cer; sourceTree = "<group>"; };
+		C8F84A051E03DCBF005A063C /* ExamplesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesViewController.swift; sourceTree = "<group>"; };
+		C8F84A081E03E485005A063C /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46C7CAB91B04AA4000CC3B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C892C3DA1BC24C8E00406ED5 /* Pitaya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46C7CAB31B04AA4000CC3B70 = {
+			isa = PBXGroup;
+			children = (
+				C8F84A081E03E485005A063C /* SwiftNotice.swift */,
+				C8E781F81D9506D20083A9F7 /* lvwenhancom.cer */,
+				C892C3D11BC24C8000406ED5 /* Pitaya.xcodeproj */,
+				46C7CABE1B04AA4000CC3B70 /* PitayaExample */,
+				46C7CABD1B04AA4000CC3B70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46C7CABD1B04AA4000CC3B70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46C7CABC1B04AA4000CC3B70 /* PitayaExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46C7CABE1B04AA4000CC3B70 /* PitayaExample */ = {
+			isa = PBXGroup;
+			children = (
+				46C7CAC11B04AA4000CC3B70 /* AppDelegate.swift */,
+				C8CF50511E02CCC00059B9DE /* RootTableViewController.swift */,
+				C8F84A051E03DCBF005A063C /* ExamplesViewController.swift */,
+				46C7CAC51B04AA4000CC3B70 /* Main.storyboard */,
+				46C7CAC81B04AA4000CC3B70 /* Images.xcassets */,
+				46C7CACA1B04AA4000CC3B70 /* LaunchScreen.xib */,
+				46C7CABF1B04AA4000CC3B70 /* Supporting Files */,
+			);
+			path = PitayaExample;
+			sourceTree = "<group>";
+		};
+		46C7CABF1B04AA4000CC3B70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B884D1A51E07B7E70008F5AB /* logo@2x.jpg */,
+				46C7CAC01B04AA4000CC3B70 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C892C3D21BC24C8000406ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C892C3D71BC24C8000406ED5 /* Pitaya.framework */,
+				C892C3D91BC24C8000406ED5 /* PitayaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46C7CABB1B04AA4000CC3B70 /* PitayaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C7CADB1B04AA4000CC3B70 /* Build configuration list for PBXNativeTarget "PitayaExample" */;
+			buildPhases = (
+				46C7CAB81B04AA4000CC3B70 /* Sources */,
+				46C7CAB91B04AA4000CC3B70 /* Frameworks */,
+				46C7CABA1B04AA4000CC3B70 /* Resources */,
+				463712321B04C4DF0019E1AB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C892C3DD1BC24C8E00406ED5 /* PBXTargetDependency */,
+			);
+			name = PitayaExample;
+			productName = PitayaExample;
+			productReference = 46C7CABC1B04AA4000CC3B70 /* PitayaExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46C7CAB41B04AA4000CC3B70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "http://lvwenhan.com";
+				TargetAttributes = {
+					46C7CABB1B04AA4000CC3B70 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = B7PY5JUP9A;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 46C7CAB71B04AA4000CC3B70 /* Build configuration list for PBXProject "PitayaExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46C7CAB31B04AA4000CC3B70;
+			productRefGroup = 46C7CABD1B04AA4000CC3B70 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C892C3D21BC24C8000406ED5 /* Products */;
+					ProjectRef = C892C3D11BC24C8000406ED5 /* Pitaya.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				46C7CABB1B04AA4000CC3B70 /* PitayaExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C892C3D71BC24C8000406ED5 /* Pitaya.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pitaya.framework;
+			remoteRef = C892C3D61BC24C8000406ED5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C892C3D91BC24C8000406ED5 /* PitayaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PitayaTests.xctest;
+			remoteRef = C892C3D81BC24C8000406ED5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46C7CABA1B04AA4000CC3B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B884D1A61E07B7E70008F5AB /* logo@2x.jpg in Resources */,
+				46C7CAC71B04AA4000CC3B70 /* Main.storyboard in Resources */,
+				46C7CACC1B04AA4000CC3B70 /* LaunchScreen.xib in Resources */,
+				46C7CAC91B04AA4000CC3B70 /* Images.xcassets in Resources */,
+				C8E781F91D9506D20083A9F7 /* lvwenhancom.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46C7CAB81B04AA4000CC3B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CF50521E02CCC00059B9DE /* RootTableViewController.swift in Sources */,
+				C8F84A061E03DCBF005A063C /* ExamplesViewController.swift in Sources */,
+				46C7CAC21B04AA4000CC3B70 /* AppDelegate.swift in Sources */,
+				C8F84A091E03E485005A063C /* SwiftNotice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C892C3DD1BC24C8E00406ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitaya;
+			targetProxy = C892C3DC1BC24C8E00406ED5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46C7CAC51B04AA4000CC3B70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46C7CAC61B04AA4000CC3B70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46C7CACA1B04AA4000CC3B70 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46C7CACB1B04AA4000CC3B70 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46C7CAD91B04AA4000CC3B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46C7CADA1B04AA4000CC3B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46C7CADC1B04AA4000CC3B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B7PY5JUP9A;
+				INFOPLIST_FILE = PitayaExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvwenhan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		46C7CADD1B04AA4000CC3B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B7PY5JUP9A;
+				INFOPLIST_FILE = PitayaExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvwenhan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46C7CAB71B04AA4000CC3B70 /* Build configuration list for PBXProject "PitayaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C7CAD91B04AA4000CC3B70 /* Debug */,
+				46C7CADA1B04AA4000CC3B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C7CADB1B04AA4000CC3B70 /* Build configuration list for PBXNativeTarget "PitayaExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C7CADC1B04AA4000CC3B70 /* Debug */,
+				46C7CADD1B04AA4000CC3B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46C7CAB41B04AA4000CC3B70 /* Project object */;
+}

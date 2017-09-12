@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     
     let sideViewWidthMultiple: CGFloat = 0.6
 
-    var centerOfLeftViewAtBeginning: CGPoint!
-    
     var homeViewController: HomeViewController!
     var sideViewController: SideViewController!
     
@@ -34,8 +32,6 @@ class ViewController: UIViewController {
         self.sideViewController.view.frame = CGRect(x: 0, y: 0, width: Common.screenWidth * self.sideViewWidthMultiple, height: Common.screenHeight)
         self.sideViewController.view.center = CGPoint(x: Common.screenWidth * self.sideViewWidthMultiple * -0.5, y: self.sideViewController.view.center.y)
         
-        // 动画参数初始化
-        centerOfLeftViewAtBeginning = self.sideViewController.view.center
         // 把侧滑菜单视图加入根容器
         self.view.addSubview(self.sideViewController.view)
         

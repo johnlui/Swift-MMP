@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4637120B1B04C2050019E1AB /* Pitaya.h in Headers */ = {isa = PBXBuildFile; fileRef = 4637120A1B04C2050019E1AB /* Pitaya.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		463712111B04C2050019E1AB /* Pitaya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463712051B04C2050019E1AB /* Pitaya.framework */; };
+		8E610C4E1BD0A95D00CF9982 /* AddHTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E610C4D1BD0A95D00CF9982 /* AddHTTPHeader.swift */; };
+		8EDD226B1B623B4600FAD39F /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD226A1B623B4600FAD39F /* BaseTestCase.swift */; };
+		B85B6F351EADB6770062892B /* SetSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85B6F341EADB6770062892B /* SetSync.swift */; };
+		B85B6F371EADCD370062892B /* Execution.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85B6F361EADCD370062892B /* Execution.swift */; };
+		B884D1A81E07B8EB0008F5AB /* logo@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B884D1A71E07B8EB0008F5AB /* logo@2x.jpg */; };
+		C83BDDBC1D8FA00D0051D3D6 /* lvwenhancom.cer in Resources */ = {isa = PBXBuildFile; fileRef = C83BDDBA1D8FA00D0051D3D6 /* lvwenhancom.cer */; };
+		C84B22801BCA1D0B00594876 /* SetHTTPBodyRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84B227F1BCA1D0B00594876 /* SetHTTPBodyRaw.swift */; };
+		C855F3721BC8247B00170211 /* ResponseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855F3711BC8247B00170211 /* ResponseJSON.swift */; };
+		C88EE1681BC3A6F10033D3B0 /* AddSSLPinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88EE1671BC3A6F10033D3B0 /* AddSSLPinning.swift */; };
+		C8ABB7271BC6A11600C4C897 /* BasicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABB7261BC6A11600C4C897 /* BasicTests.swift */; };
+		C8ABB7291BC6A89600C4C897 /* WithStringParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABB7281BC6A89600C4C897 /* WithStringParams.swift */; };
+		C8ABB72B1BC6AD2E00C4C897 /* AddFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABB72A1BC6AD2E00C4C897 /* AddFiles.swift */; };
+		C8ABB72D1BC6AF1200C4C897 /* BasicAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABB72C1BC6AF1200C4C897 /* BasicAuth.swift */; };
+		C8ABB72F1BC6C75800C4C897 /* PitayaManager+NSURLSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABB72E1BC6C75800C4C897 /* PitayaManager+NSURLSessionDelegate.swift */; };
+		C8ABB7351BC6C97100C4C897 /* PitayaManager+Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ABB7341BC6C97100C4C897 /* PitayaManager+Static.swift */; };
+		C8B35A061C2D1DBF0016A222 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B35A051C2D1DBF0016A222 /* Control.swift */; };
+		C8C2A2281DA223F500EF0B59 /* WithOtherTypeParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C2A2271DA223F500EF0B59 /* WithOtherTypeParams.swift */; };
+		C8CF0E551BC55671002E2D0A /* Pitaya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0E541BC55671002E2D0A /* Pitaya.swift */; };
+		C8CF0E571BC5568F002E2D0A /* String+NSData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0E561BC5568E002E2D0A /* String+NSData.swift */; };
+		C8CF0E591BC556AC002E2D0A /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0E581BC556AC002E2D0A /* String+Base64.swift */; };
+		C8CF0E5B1BC556D0002E2D0A /* PitayaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0E5A1BC556D0002E2D0A /* PitayaManager.swift */; };
+		C8CF0E5D1BC556F8002E2D0A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0E5C1BC556F8002E2D0A /* File.swift */; };
+		C8CF0E5F1BC55724002E2D0A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0E5E1BC55724002E2D0A /* HTTPMethod.swift */; };
+		C8CF0E631BC55B3C002E2D0A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF0E621BC55B3C002E2D0A /* Helper.swift */; };
+		C8E781F11D94D8DF0083A9F7 /* JSONND.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E781ED1D94D8DF0083A9F7 /* JSONND.swift */; };
+		C8E781F21D94D8DF0083A9F7 /* JSONND+ArrayLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E781EE1D94D8DF0083A9F7 /* JSONND+ArrayLiteralConvertible.swift */; };
+		C8E781F31D94D8DF0083A9F7 /* JSONND+DictionaryLiteralConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E781EF1D94D8DF0083A9F7 /* JSONND+DictionaryLiteralConvertible.swift */; };
+		C8E781F41D94D8DF0083A9F7 /* JSONNDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E781F01D94D8DF0083A9F7 /* JSONNDModel.swift */; };
+		C8F02A271E5AFE2F0019CD22 /* SetTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F02A261E5AFE2F0019CD22 /* SetTimeout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		463712121B04C2050019E1AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 463711FC1B04C2050019E1AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 463712041B04C2050019E1AB;
+			remoteInfo = Pitaya;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		463712051B04C2050019E1AB /* Pitaya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pitaya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463712091B04C2050019E1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4637120A1B04C2050019E1AB /* Pitaya.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pitaya.h; sourceTree = "<group>"; };
+		463712101B04C2050019E1AB /* PitayaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PitayaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		463712161B04C2050019E1AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E610C4D1BD0A95D00CF9982 /* AddHTTPHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHTTPHeader.swift; sourceTree = "<group>"; };
+		8EDD226A1B623B4600FAD39F /* BaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		B85B6F341EADB6770062892B /* SetSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetSync.swift; sourceTree = "<group>"; };
+		B85B6F361EADCD370062892B /* Execution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Execution.swift; sourceTree = "<group>"; };
+		B884D1A71E07B8EB0008F5AB /* logo@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "logo@2x.jpg"; path = "assets/logo@2x.jpg"; sourceTree = SOURCE_ROOT; };
+		C83BDDBA1D8FA00D0051D3D6 /* lvwenhancom.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = lvwenhancom.cer; path = assets/lvwenhancom.cer; sourceTree = SOURCE_ROOT; };
+		C84B227F1BCA1D0B00594876 /* SetHTTPBodyRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetHTTPBodyRaw.swift; sourceTree = "<group>"; };
+		C855F3711BC8247B00170211 /* ResponseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseJSON.swift; sourceTree = "<group>"; };
+		C88EE1671BC3A6F10033D3B0 /* AddSSLPinning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSSLPinning.swift; sourceTree = "<group>"; };
+		C8ABB7261BC6A11600C4C897 /* BasicTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTests.swift; sourceTree = "<group>"; };
+		C8ABB7281BC6A89600C4C897 /* WithStringParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithStringParams.swift; sourceTree = "<group>"; };
+		C8ABB72A1BC6AD2E00C4C897 /* AddFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFiles.swift; sourceTree = "<group>"; };
+		C8ABB72C1BC6AF1200C4C897 /* BasicAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAuth.swift; sourceTree = "<group>"; };
+		C8ABB72E1BC6C75800C4C897 /* PitayaManager+NSURLSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PitayaManager+NSURLSessionDelegate.swift"; path = "Source/PitayaManager+NSURLSessionDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		C8ABB7341BC6C97100C4C897 /* PitayaManager+Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PitayaManager+Static.swift"; path = "Source/PitayaManager+Static.swift"; sourceTree = SOURCE_ROOT; };
+		C8B35A051C2D1DBF0016A222 /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		C8C2A2271DA223F500EF0B59 /* WithOtherTypeParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithOtherTypeParams.swift; sourceTree = "<group>"; };
+		C8CF0E541BC55671002E2D0A /* Pitaya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pitaya.swift; path = Source/Pitaya.swift; sourceTree = SOURCE_ROOT; };
+		C8CF0E561BC5568E002E2D0A /* String+NSData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+NSData.swift"; path = "Source/String+NSData.swift"; sourceTree = SOURCE_ROOT; };
+		C8CF0E581BC556AC002E2D0A /* String+Base64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Base64.swift"; path = "Source/String+Base64.swift"; sourceTree = SOURCE_ROOT; };
+		C8CF0E5A1BC556D0002E2D0A /* PitayaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PitayaManager.swift; path = Source/PitayaManager.swift; sourceTree = SOURCE_ROOT; };
+		C8CF0E5C1BC556F8002E2D0A /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Source/File.swift; sourceTree = SOURCE_ROOT; };
+		C8CF0E5E1BC55724002E2D0A /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = SOURCE_ROOT; };
+		C8CF0E621BC55B3C002E2D0A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Source/Helper.swift; sourceTree = SOURCE_ROOT; };
+		C8E781ED1D94D8DF0083A9F7 /* JSONND.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONND.swift; path = Source/JSONNeverDie/JSONND.swift; sourceTree = SOURCE_ROOT; };
+		C8E781EE1D94D8DF0083A9F7 /* JSONND+ArrayLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "JSONND+ArrayLiteralConvertible.swift"; path = "Source/JSONNeverDie/JSONND+ArrayLiteralConvertible.swift"; sourceTree = SOURCE_ROOT; };
+		C8E781EF1D94D8DF0083A9F7 /* JSONND+DictionaryLiteralConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "JSONND+DictionaryLiteralConvertible.swift"; path = "Source/JSONNeverDie/JSONND+DictionaryLiteralConvertible.swift"; sourceTree = SOURCE_ROOT; };
+		C8E781F01D94D8DF0083A9F7 /* JSONNDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONNDModel.swift; path = Source/JSONNeverDie/JSONNDModel.swift; sourceTree = SOURCE_ROOT; };
+		C8F02A261E5AFE2F0019CD22 /* SetTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeout.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		463712011B04C2050019E1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4637120D1B04C2050019E1AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463712111B04C2050019E1AB /* Pitaya.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		463711FB1B04C2050019E1AB = {
+			isa = PBXGroup;
+			children = (
+				463712071B04C2050019E1AB /* Pitaya */,
+				463712141B04C2050019E1AB /* PitayaTests */,
+				463712061B04C2050019E1AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		463712061B04C2050019E1AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				463712051B04C2050019E1AB /* Pitaya.framework */,
+				463712101B04C2050019E1AB /* PitayaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		463712071B04C2050019E1AB /* Pitaya */ = {
+			isa = PBXGroup;
+			children = (
+				4637120A1B04C2050019E1AB /* Pitaya.h */,
+				C8CF0E541BC55671002E2D0A /* Pitaya.swift */,
+				C8CF0E5A1BC556D0002E2D0A /* PitayaManager.swift */,
+				C8ABB7341BC6C97100C4C897 /* PitayaManager+Static.swift */,
+				C8ABB72E1BC6C75800C4C897 /* PitayaManager+NSURLSessionDelegate.swift */,
+				C8CF0E5E1BC55724002E2D0A /* HTTPMethod.swift */,
+				B85B6F361EADCD370062892B /* Execution.swift */,
+				C8CF0E5C1BC556F8002E2D0A /* File.swift */,
+				C8CF0E561BC5568E002E2D0A /* String+NSData.swift */,
+				C8CF0E581BC556AC002E2D0A /* String+Base64.swift */,
+				C8CF0E621BC55B3C002E2D0A /* Helper.swift */,
+				463712081B04C2050019E1AB /* Supporting Files */,
+			);
+			path = Pitaya;
+			sourceTree = "<group>";
+		};
+		463712081B04C2050019E1AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C88AA8D21BE67E1A008C3B47 /* JSONNeverDie */,
+				463712091B04C2050019E1AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		463712141B04C2050019E1AB /* PitayaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EDD226A1B623B4600FAD39F /* BaseTestCase.swift */,
+				C8ABB7261BC6A11600C4C897 /* BasicTests.swift */,
+				C8B35A051C2D1DBF0016A222 /* Control.swift */,
+				C8ABB7281BC6A89600C4C897 /* WithStringParams.swift */,
+				C8C2A2271DA223F500EF0B59 /* WithOtherTypeParams.swift */,
+				C8ABB72A1BC6AD2E00C4C897 /* AddFiles.swift */,
+				C8ABB72C1BC6AF1200C4C897 /* BasicAuth.swift */,
+				8E610C4D1BD0A95D00CF9982 /* AddHTTPHeader.swift */,
+				C84B227F1BCA1D0B00594876 /* SetHTTPBodyRaw.swift */,
+				C8F02A261E5AFE2F0019CD22 /* SetTimeout.swift */,
+				B85B6F341EADB6770062892B /* SetSync.swift */,
+				C88EE1671BC3A6F10033D3B0 /* AddSSLPinning.swift */,
+				C855F3711BC8247B00170211 /* ResponseJSON.swift */,
+				B884D1A71E07B8EB0008F5AB /* logo@2x.jpg */,
+				C83BDDBA1D8FA00D0051D3D6 /* lvwenhancom.cer */,
+				463712151B04C2050019E1AB /* Supporting Files */,
+			);
+			path = PitayaTests;
+			sourceTree = "<group>";
+		};
+		463712151B04C2050019E1AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				463712161B04C2050019E1AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C88AA8D21BE67E1A008C3B47 /* JSONNeverDie */ = {
+			isa = PBXGroup;
+			children = (
+				C8E781ED1D94D8DF0083A9F7 /* JSONND.swift */,
+				C8E781EE1D94D8DF0083A9F7 /* JSONND+ArrayLiteralConvertible.swift */,
+				C8E781EF1D94D8DF0083A9F7 /* JSONND+DictionaryLiteralConvertible.swift */,
+				C8E781F01D94D8DF0083A9F7 /* JSONNDModel.swift */,
+			);
+			name = JSONNeverDie;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		463712021B04C2050019E1AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4637120B1B04C2050019E1AB /* Pitaya.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		463712041B04C2050019E1AB /* Pitaya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4637121B1B04C2050019E1AB /* Build configuration list for PBXNativeTarget "Pitaya" */;
+			buildPhases = (
+				463712001B04C2050019E1AB /* Sources */,
+				463712011B04C2050019E1AB /* Frameworks */,
+				463712021B04C2050019E1AB /* Headers */,
+				463712031B04C2050019E1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pitaya;
+			productName = Pitaya;
+			productReference = 463712051B04C2050019E1AB /* Pitaya.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4637120F1B04C2050019E1AB /* PitayaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4637121E1B04C2050019E1AB /* Build configuration list for PBXNativeTarget "PitayaTests" */;
+			buildPhases = (
+				4637120C1B04C2050019E1AB /* Sources */,
+				4637120D1B04C2050019E1AB /* Frameworks */,
+				4637120E1B04C2050019E1AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				463712131B04C2050019E1AB /* PBXTargetDependency */,
+			);
+			name = PitayaTests;
+			productName = PitayaTests;
+			productReference = 463712101B04C2050019E1AB /* PitayaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		463711FC1B04C2050019E1AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "http://lvwenhan.com";
+				TargetAttributes = {
+					463712041B04C2050019E1AB = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
+					};
+					4637120F1B04C2050019E1AB = {
+						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 463711FF1B04C2050019E1AB /* Build configuration list for PBXProject "Pitaya" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 463711FB1B04C2050019E1AB;
+			productRefGroup = 463712061B04C2050019E1AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				463712041B04C2050019E1AB /* Pitaya */,
+				4637120F1B04C2050019E1AB /* PitayaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		463712031B04C2050019E1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4637120E1B04C2050019E1AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83BDDBC1D8FA00D0051D3D6 /* lvwenhancom.cer in Resources */,
+				B884D1A81E07B8EB0008F5AB /* logo@2x.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		463712001B04C2050019E1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8CF0E5D1BC556F8002E2D0A /* File.swift in Sources */,
+				C8CF0E631BC55B3C002E2D0A /* Helper.swift in Sources */,
+				C8CF0E551BC55671002E2D0A /* Pitaya.swift in Sources */,
+				C8E781F11D94D8DF0083A9F7 /* JSONND.swift in Sources */,
+				C8CF0E5F1BC55724002E2D0A /* HTTPMethod.swift in Sources */,
+				C8ABB72F1BC6C75800C4C897 /* PitayaManager+NSURLSessionDelegate.swift in Sources */,
+				C8ABB7351BC6C97100C4C897 /* PitayaManager+Static.swift in Sources */,
+				C8E781F31D94D8DF0083A9F7 /* JSONND+DictionaryLiteralConvertible.swift in Sources */,
+				C8CF0E5B1BC556D0002E2D0A /* PitayaManager.swift in Sources */,
+				C8CF0E591BC556AC002E2D0A /* String+Base64.swift in Sources */,
+				B85B6F371EADCD370062892B /* Execution.swift in Sources */,
+				C8E781F21D94D8DF0083A9F7 /* JSONND+ArrayLiteralConvertible.swift in Sources */,
+				C8E781F41D94D8DF0083A9F7 /* JSONNDModel.swift in Sources */,
+				C8CF0E571BC5568F002E2D0A /* String+NSData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4637120C1B04C2050019E1AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8C2A2281DA223F500EF0B59 /* WithOtherTypeParams.swift in Sources */,
+				B85B6F351EADB6770062892B /* SetSync.swift in Sources */,
+				8EDD226B1B623B4600FAD39F /* BaseTestCase.swift in Sources */,
+				C88EE1681BC3A6F10033D3B0 /* AddSSLPinning.swift in Sources */,
+				C8ABB7291BC6A89600C4C897 /* WithStringParams.swift in Sources */,
+				8E610C4E1BD0A95D00CF9982 /* AddHTTPHeader.swift in Sources */,
+				C8ABB7271BC6A11600C4C897 /* BasicTests.swift in Sources */,
+				C8F02A271E5AFE2F0019CD22 /* SetTimeout.swift in Sources */,
+				C84B22801BCA1D0B00594876 /* SetHTTPBodyRaw.swift in Sources */,
+				C8ABB72D1BC6AF1200C4C897 /* BasicAuth.swift in Sources */,
+				C8B35A061C2D1DBF0016A222 /* Control.swift in Sources */,
+				C855F3721BC8247B00170211 /* ResponseJSON.swift in Sources */,
+				C8ABB72B1BC6AD2E00C4C897 /* AddFiles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		463712131B04C2050019E1AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 463712041B04C2050019E1AB /* Pitaya */;
+			targetProxy = 463712121B04C2050019E1AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		463712191B04C2050019E1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4637121A1B04C2050019E1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4637121C1B04C2050019E1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Pitaya/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvwenhan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4637121D1B04C2050019E1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Pitaya/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvwenhan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4637121F1B04C2050019E1AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PitayaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvwenhan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		463712201B04C2050019E1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PitayaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lvwenhan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		463711FF1B04C2050019E1AB /* Build configuration list for PBXProject "Pitaya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				463712191B04C2050019E1AB /* Debug */,
+				4637121A1B04C2050019E1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4637121B1B04C2050019E1AB /* Build configuration list for PBXNativeTarget "Pitaya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4637121C1B04C2050019E1AB /* Debug */,
+				4637121D1B04C2050019E1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4637121E1B04C2050019E1AB /* Build configuration list for PBXNativeTarget "PitayaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4637121F1B04C2050019E1AB /* Debug */,
+				463712201B04C2050019E1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 463711FC1B04C2050019E1AB /* Project object */;
+}

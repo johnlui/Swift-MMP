@@ -11,9 +11,12 @@ import UIKit
 class HomeViewController: UIViewController {
     
     weak var viewController: ViewController!
+    
+    var currentPage = 0
 
     @IBOutlet var pageTitleButtonCollection: [UIButton]!
     @IBOutlet weak var scrollBarScrollView: UIScrollView!
+    @IBOutlet weak var contentScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,7 +45,7 @@ class HomeViewController: UIViewController {
                 b.alpha = 0.7
             }
             button.alpha = 1
-            self.scrollBarScrollView.setContentOffset(CGPoint(x: -80 * index, y: 0), animated: true)
+            self.contentScrollView.setContentOffset(CGPoint(x: Common.screenWidth * CGFloat(index), y: 0), animated: true)
         }
     }
 
@@ -56,4 +59,27 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+
+private typealias ScrollViewDelegate = HomeViewController
+
+extension ScrollViewDelegate: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        switch scrollView {
+        case self.contentScrollView:
+            self.currentPage = Int(self.contentScrollView.contentOffset.x / Common.screenWidth + 0.5)
+            self.scrollBarScrollView.setContentOffset(CGPoint(x: self.contentScrollView.contentOffset.x * -80 / Common.screenWidth, y: 0), animated: false)
+        case self.scrollBarScrollView:
+            let index = Int((self.scrollBarScrollView.contentOffset.x - 40 ) / -80)
+            if index >= 0 && index <= self.pageTitleButtonCollection.count {
+                for b in self.pageTitleButtonCollection {
+                    b.alpha = 0.7
+                }
+                self.pageTitleButtonCollection[index].alpha = 1
+            }
+        default:
+            break
+        }
+    }
 }
