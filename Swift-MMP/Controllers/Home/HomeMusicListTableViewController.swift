@@ -11,6 +11,8 @@ import Kingfisher
 
 class HomeMusicListTableViewController: UITableViewController {
     
+    weak var viewController: ViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -33,22 +35,19 @@ class HomeMusicListTableViewController: UITableViewController {
         let song = Common.songsArray[indexPath.row]
         
         let urlString = Common.thumbBaseURI + song[1] + ".jpg"
-        cell.iv.kf.setImage(with: URL(string: urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!)!, placeholder: #imageLiteral(resourceName: "no_cover"))
+        cell.iv.kf.setImage(with: URL(string: urlString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!), placeholder: #imageLiteral(resourceName: "no_cover"))
         cell.titleLabel.text = song[0]
         cell.artistLabel.text = "周杰伦  |  " + song[1]
 
         return cell
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Player", bundle: nil).instantiateViewController(withIdentifier: "playerVC") as! PlayerViewController
+        vc.song = Common.songsArray[indexPath.row]
+        self.viewController.show(vc, sender: tableView.cellForRow(at: indexPath))
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
 
     @IBAction func randomButtonBeTapped(_ sender: Any) {
     }

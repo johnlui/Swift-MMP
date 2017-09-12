@@ -14,6 +14,26 @@
 		C8635C291F67E9C800D84C7E /* HomeMusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8635C281F67E9C800D84C7E /* HomeMusicListTableViewCell.swift */; };
 		C8635C7A1F68031E00D84C7E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8635C631F68030000D84C7E /* Kingfisher.framework */; };
 		C8635C7B1F68031E00D84C7E /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8635C631F68030000D84C7E /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C88A46841F6841FB001727EC /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88A46831F6841FB001727EC /* PlayerViewController.swift */; };
+		C88A46861F684357001727EC /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88A46851F684357001727EC /* Player.storyboard */; };
+		C88A46B21F6845BE001727EC /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A468C1F6845BE001727EC /* DOUAudioAnalyzer.m */; };
+		C88A46B31F6845BE001727EC /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A468E1F6845BE001727EC /* DOUAudioAnalyzer+Default.m */; };
+		C88A46B41F6845BE001727EC /* DOUAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46911F6845BE001727EC /* DOUAudioDecoder.m */; };
+		C88A46B51F6845BE001727EC /* DOUAudioEventLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46931F6845BE001727EC /* DOUAudioEventLoop.m */; };
+		C88A46B61F6845BE001727EC /* DOUAudioFilePreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46961F6845BE001727EC /* DOUAudioFilePreprocessor.m */; };
+		C88A46B71F6845BE001727EC /* DOUAudioFileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46981F6845BE001727EC /* DOUAudioFileProvider.m */; };
+		C88A46B81F6845BE001727EC /* DOUAudioFrequencyAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A469A1F6845BE001727EC /* DOUAudioFrequencyAnalyzer.m */; };
+		C88A46B91F6845BE001727EC /* DOUAudioLPCM.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A469C1F6845BE001727EC /* DOUAudioLPCM.m */; };
+		C88A46BA1F6845BE001727EC /* DOUAudioPlaybackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A469E1F6845BE001727EC /* DOUAudioPlaybackItem.m */; };
+		C88A46BB1F6845BE001727EC /* DOUAudioRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46A01F6845BE001727EC /* DOUAudioRenderer.m */; };
+		C88A46BC1F6845BE001727EC /* DOUAudioSpatialAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46A21F6845BE001727EC /* DOUAudioSpatialAnalyzer.m */; };
+		C88A46BD1F6845BE001727EC /* DOUAudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46A51F6845BE001727EC /* DOUAudioStreamer.m */; };
+		C88A46BE1F6845BE001727EC /* DOUAudioStreamer+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46A71F6845BE001727EC /* DOUAudioStreamer+Options.m */; };
+		C88A46BF1F6845BE001727EC /* DOUAudioVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46A91F6845BE001727EC /* DOUAudioVisualizer.m */; };
+		C88A46C01F6845BE001727EC /* DOUEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46AB1F6845BE001727EC /* DOUEAGLView.m */; };
+		C88A46C11F6845BE001727EC /* DOUMPMediaLibraryAssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46AD1F6845BE001727EC /* DOUMPMediaLibraryAssetLoader.m */; };
+		C88A46C21F6845BE001727EC /* DOUSimpleHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46AF1F6845BE001727EC /* DOUSimpleHTTPRequest.m */; };
+		C88A46C31F6845BE001727EC /* NSData+DOUMappedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = C88A46B11F6845BE001727EC /* NSData+DOUMappedFile.m */; };
 		C88FEFEC1F65AEF600A096ED /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88FEFEB1F65AEF600A096ED /* Home.storyboard */; };
 		C88FEFEF1F65AF6700A096ED /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FEFEE1F65AF6700A096ED /* SideViewController.swift */; };
 		C88FEFF11F65B08200A096ED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FEFF01F65B08200A096ED /* HomeViewController.swift */; };
@@ -176,6 +196,49 @@
 		C8635C181F67E91F00D84C7E /* Pitaya.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pitaya.xcodeproj; path = Frameworks/Pitaya/Pitaya.xcodeproj; sourceTree = "<group>"; };
 		C8635C281F67E9C800D84C7E /* HomeMusicListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeMusicListTableViewCell.swift; path = Views/HomeMusicListTableViewCell.swift; sourceTree = "<group>"; };
 		C8635C531F68030000D84C7E /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = Frameworks/Kingfisher/Kingfisher.xcodeproj; sourceTree = "<group>"; };
+		C88A46831F6841FB001727EC /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerViewController.swift; path = Controllers/Player/PlayerViewController.swift; sourceTree = "<group>"; };
+		C88A46851F684357001727EC /* Player.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Player.storyboard; path = Storyboards/Player.storyboard; sourceTree = "<group>"; };
+		C88A46891F6845BD001727EC /* Swift-MMP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-MMP-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		C88A468A1F6845BE001727EC /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioAnalyzer_Private.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioAnalyzer_Private.h"; sourceTree = "<group>"; };
+		C88A468B1F6845BE001727EC /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioAnalyzer.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioAnalyzer.h"; sourceTree = "<group>"; };
+		C88A468C1F6845BE001727EC /* DOUAudioAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioAnalyzer.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioAnalyzer.m"; sourceTree = "<group>"; };
+		C88A468D1F6845BE001727EC /* DOUAudioAnalyzer+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DOUAudioAnalyzer+Default.h"; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioAnalyzer+Default.h"; sourceTree = "<group>"; };
+		C88A468E1F6845BE001727EC /* DOUAudioAnalyzer+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DOUAudioAnalyzer+Default.m"; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioAnalyzer+Default.m"; sourceTree = "<group>"; };
+		C88A468F1F6845BE001727EC /* DOUAudioBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioBase.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioBase.h"; sourceTree = "<group>"; };
+		C88A46901F6845BE001727EC /* DOUAudioDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioDecoder.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioDecoder.h"; sourceTree = "<group>"; };
+		C88A46911F6845BE001727EC /* DOUAudioDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioDecoder.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioDecoder.m"; sourceTree = "<group>"; };
+		C88A46921F6845BE001727EC /* DOUAudioEventLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioEventLoop.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioEventLoop.h"; sourceTree = "<group>"; };
+		C88A46931F6845BE001727EC /* DOUAudioEventLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioEventLoop.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioEventLoop.m"; sourceTree = "<group>"; };
+		C88A46941F6845BE001727EC /* DOUAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioFile.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioFile.h"; sourceTree = "<group>"; };
+		C88A46951F6845BE001727EC /* DOUAudioFilePreprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioFilePreprocessor.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioFilePreprocessor.h"; sourceTree = "<group>"; };
+		C88A46961F6845BE001727EC /* DOUAudioFilePreprocessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioFilePreprocessor.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioFilePreprocessor.m"; sourceTree = "<group>"; };
+		C88A46971F6845BE001727EC /* DOUAudioFileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioFileProvider.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioFileProvider.h"; sourceTree = "<group>"; };
+		C88A46981F6845BE001727EC /* DOUAudioFileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioFileProvider.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioFileProvider.m"; sourceTree = "<group>"; };
+		C88A46991F6845BE001727EC /* DOUAudioFrequencyAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioFrequencyAnalyzer.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioFrequencyAnalyzer.h"; sourceTree = "<group>"; };
+		C88A469A1F6845BE001727EC /* DOUAudioFrequencyAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioFrequencyAnalyzer.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioFrequencyAnalyzer.m"; sourceTree = "<group>"; };
+		C88A469B1F6845BE001727EC /* DOUAudioLPCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioLPCM.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioLPCM.h"; sourceTree = "<group>"; };
+		C88A469C1F6845BE001727EC /* DOUAudioLPCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioLPCM.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioLPCM.m"; sourceTree = "<group>"; };
+		C88A469D1F6845BE001727EC /* DOUAudioPlaybackItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioPlaybackItem.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioPlaybackItem.h"; sourceTree = "<group>"; };
+		C88A469E1F6845BE001727EC /* DOUAudioPlaybackItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioPlaybackItem.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioPlaybackItem.m"; sourceTree = "<group>"; };
+		C88A469F1F6845BE001727EC /* DOUAudioRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioRenderer.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioRenderer.h"; sourceTree = "<group>"; };
+		C88A46A01F6845BE001727EC /* DOUAudioRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioRenderer.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioRenderer.m"; sourceTree = "<group>"; };
+		C88A46A11F6845BE001727EC /* DOUAudioSpatialAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioSpatialAnalyzer.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioSpatialAnalyzer.h"; sourceTree = "<group>"; };
+		C88A46A21F6845BE001727EC /* DOUAudioSpatialAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioSpatialAnalyzer.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioSpatialAnalyzer.m"; sourceTree = "<group>"; };
+		C88A46A31F6845BE001727EC /* DOUAudioStreamer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioStreamer_Private.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioStreamer_Private.h"; sourceTree = "<group>"; };
+		C88A46A41F6845BE001727EC /* DOUAudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioStreamer.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioStreamer.h"; sourceTree = "<group>"; };
+		C88A46A51F6845BE001727EC /* DOUAudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioStreamer.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioStreamer.m"; sourceTree = "<group>"; };
+		C88A46A61F6845BE001727EC /* DOUAudioStreamer+Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DOUAudioStreamer+Options.h"; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioStreamer+Options.h"; sourceTree = "<group>"; };
+		C88A46A71F6845BE001727EC /* DOUAudioStreamer+Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DOUAudioStreamer+Options.m"; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioStreamer+Options.m"; sourceTree = "<group>"; };
+		C88A46A81F6845BE001727EC /* DOUAudioVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioVisualizer.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioVisualizer.h"; sourceTree = "<group>"; };
+		C88A46A91F6845BE001727EC /* DOUAudioVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUAudioVisualizer.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUAudioVisualizer.m"; sourceTree = "<group>"; };
+		C88A46AA1F6845BE001727EC /* DOUEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUEAGLView.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUEAGLView.h"; sourceTree = "<group>"; };
+		C88A46AB1F6845BE001727EC /* DOUEAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUEAGLView.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUEAGLView.m"; sourceTree = "<group>"; };
+		C88A46AC1F6845BE001727EC /* DOUMPMediaLibraryAssetLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUMPMediaLibraryAssetLoader.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUMPMediaLibraryAssetLoader.h"; sourceTree = "<group>"; };
+		C88A46AD1F6845BE001727EC /* DOUMPMediaLibraryAssetLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUMPMediaLibraryAssetLoader.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUMPMediaLibraryAssetLoader.m"; sourceTree = "<group>"; };
+		C88A46AE1F6845BE001727EC /* DOUSimpleHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUSimpleHTTPRequest.h; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUSimpleHTTPRequest.h"; sourceTree = "<group>"; };
+		C88A46AF1F6845BE001727EC /* DOUSimpleHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DOUSimpleHTTPRequest.m; path = "Frameworks/DOUAudioStreamer-Swift/src/DOUSimpleHTTPRequest.m"; sourceTree = "<group>"; };
+		C88A46B01F6845BE001727EC /* NSData+DOUMappedFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+DOUMappedFile.h"; path = "Frameworks/DOUAudioStreamer-Swift/src/NSData+DOUMappedFile.h"; sourceTree = "<group>"; };
+		C88A46B11F6845BE001727EC /* NSData+DOUMappedFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+DOUMappedFile.m"; path = "Frameworks/DOUAudioStreamer-Swift/src/NSData+DOUMappedFile.m"; sourceTree = "<group>"; };
 		C88FEFEB1F65AEF600A096ED /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
 		C88FEFEE1F65AF6700A096ED /* SideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideViewController.swift; path = Controllers/Home/SideViewController.swift; sourceTree = "<group>"; };
 		C88FEFF01F65B08200A096ED /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/Home/HomeViewController.swift; sourceTree = "<group>"; };
@@ -275,9 +338,75 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C88A46761F6841E1001727EC /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				C88A46831F6841FB001727EC /* PlayerViewController.swift */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		C88A46871F684596001727EC /* DOUAudioStreamer-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C88A468A1F6845BE001727EC /* DOUAudioAnalyzer_Private.h */,
+				C88A468B1F6845BE001727EC /* DOUAudioAnalyzer.h */,
+				C88A468C1F6845BE001727EC /* DOUAudioAnalyzer.m */,
+				C88A468D1F6845BE001727EC /* DOUAudioAnalyzer+Default.h */,
+				C88A468E1F6845BE001727EC /* DOUAudioAnalyzer+Default.m */,
+				C88A468F1F6845BE001727EC /* DOUAudioBase.h */,
+				C88A46901F6845BE001727EC /* DOUAudioDecoder.h */,
+				C88A46911F6845BE001727EC /* DOUAudioDecoder.m */,
+				C88A46921F6845BE001727EC /* DOUAudioEventLoop.h */,
+				C88A46931F6845BE001727EC /* DOUAudioEventLoop.m */,
+				C88A46941F6845BE001727EC /* DOUAudioFile.h */,
+				C88A46951F6845BE001727EC /* DOUAudioFilePreprocessor.h */,
+				C88A46961F6845BE001727EC /* DOUAudioFilePreprocessor.m */,
+				C88A46971F6845BE001727EC /* DOUAudioFileProvider.h */,
+				C88A46981F6845BE001727EC /* DOUAudioFileProvider.m */,
+				C88A46991F6845BE001727EC /* DOUAudioFrequencyAnalyzer.h */,
+				C88A469A1F6845BE001727EC /* DOUAudioFrequencyAnalyzer.m */,
+				C88A469B1F6845BE001727EC /* DOUAudioLPCM.h */,
+				C88A469C1F6845BE001727EC /* DOUAudioLPCM.m */,
+				C88A469D1F6845BE001727EC /* DOUAudioPlaybackItem.h */,
+				C88A469E1F6845BE001727EC /* DOUAudioPlaybackItem.m */,
+				C88A469F1F6845BE001727EC /* DOUAudioRenderer.h */,
+				C88A46A01F6845BE001727EC /* DOUAudioRenderer.m */,
+				C88A46A11F6845BE001727EC /* DOUAudioSpatialAnalyzer.h */,
+				C88A46A21F6845BE001727EC /* DOUAudioSpatialAnalyzer.m */,
+				C88A46A31F6845BE001727EC /* DOUAudioStreamer_Private.h */,
+				C88A46A41F6845BE001727EC /* DOUAudioStreamer.h */,
+				C88A46A51F6845BE001727EC /* DOUAudioStreamer.m */,
+				C88A46A61F6845BE001727EC /* DOUAudioStreamer+Options.h */,
+				C88A46A71F6845BE001727EC /* DOUAudioStreamer+Options.m */,
+				C88A46A81F6845BE001727EC /* DOUAudioVisualizer.h */,
+				C88A46A91F6845BE001727EC /* DOUAudioVisualizer.m */,
+				C88A46AA1F6845BE001727EC /* DOUEAGLView.h */,
+				C88A46AB1F6845BE001727EC /* DOUEAGLView.m */,
+				C88A46AC1F6845BE001727EC /* DOUMPMediaLibraryAssetLoader.h */,
+				C88A46AD1F6845BE001727EC /* DOUMPMediaLibraryAssetLoader.m */,
+				C88A46AE1F6845BE001727EC /* DOUSimpleHTTPRequest.h */,
+				C88A46AF1F6845BE001727EC /* DOUSimpleHTTPRequest.m */,
+				C88A46B01F6845BE001727EC /* NSData+DOUMappedFile.h */,
+				C88A46B11F6845BE001727EC /* NSData+DOUMappedFile.m */,
+			);
+			name = "DOUAudioStreamer-Swift";
+			sourceTree = "<group>";
+		};
+		C88A46881F68459F001727EC /* Framewrks */ = {
+			isa = PBXGroup;
+			children = (
+				C8635C531F68030000D84C7E /* Kingfisher.xcodeproj */,
+				C8635C181F67E91F00D84C7E /* Pitaya.xcodeproj */,
+				C88A46871F684596001727EC /* DOUAudioStreamer-Swift */,
+			);
+			name = Framewrks;
+			sourceTree = "<group>";
+		};
 		C88FEFED1F65AF3600A096ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C88A46761F6841E1001727EC /* Player */,
 				C8635C151F67CF3300D84C7E /* Home */,
 			);
 			name = Controllers;
@@ -286,8 +415,7 @@
 		C8E2AE0F1F659A870015F133 = {
 			isa = PBXGroup;
 			children = (
-				C8635C531F68030000D84C7E /* Kingfisher.xcodeproj */,
-				C8635C181F67E91F00D84C7E /* Pitaya.xcodeproj */,
+				C88A46881F68459F001727EC /* Framewrks */,
 				C8E2AE1A1F659A870015F133 /* Swift-MMP */,
 				C8E2AE2F1F659A870015F133 /* Swift-MMPTests */,
 				C8E2AE3A1F659A870015F133 /* Swift-MMPUITests */,
@@ -315,9 +443,11 @@
 				C8E2AE1D1F659A870015F133 /* ViewController.swift */,
 				C8E2AE1F1F659A870015F133 /* Main.storyboard */,
 				C88FEFEB1F65AEF600A096ED /* Home.storyboard */,
+				C88A46851F684357001727EC /* Player.storyboard */,
 				C8E2AE221F659A870015F133 /* Assets.xcassets */,
 				C8E2AE241F659A870015F133 /* LaunchScreen.storyboard */,
 				C8E2AE271F659A870015F133 /* Info.plist */,
+				C88A46891F6845BD001727EC /* Swift-MMP-Bridging-Header.h */,
 			);
 			path = "Swift-MMP";
 			sourceTree = "<group>";
@@ -412,6 +542,7 @@
 					C8E2AE171F659A870015F133 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = B7PY5JUP9A;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					C8E2AE2B1F659A870015F133 = {
@@ -566,6 +697,7 @@
 			files = (
 				C8E2AE261F659A870015F133 /* LaunchScreen.storyboard in Resources */,
 				C8E2AE231F659A870015F133 /* Assets.xcassets in Resources */,
+				C88A46861F684357001727EC /* Player.storyboard in Resources */,
 				C8E2AE211F659A870015F133 /* Main.storyboard in Resources */,
 				C88FEFEC1F65AEF600A096ED /* Home.storyboard in Resources */,
 			);
@@ -592,13 +724,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88A46B81F6845BE001727EC /* DOUAudioFrequencyAnalyzer.m in Sources */,
+				C88A46C21F6845BE001727EC /* DOUSimpleHTTPRequest.m in Sources */,
+				C88A46BA1F6845BE001727EC /* DOUAudioPlaybackItem.m in Sources */,
+				C88A46C11F6845BE001727EC /* DOUMPMediaLibraryAssetLoader.m in Sources */,
+				C88A46BE1F6845BE001727EC /* DOUAudioStreamer+Options.m in Sources */,
 				C8635C291F67E9C800D84C7E /* HomeMusicListTableViewCell.swift in Sources */,
+				C88A46BC1F6845BE001727EC /* DOUAudioSpatialAnalyzer.m in Sources */,
+				C88A46841F6841FB001727EC /* PlayerViewController.swift in Sources */,
+				C88A46B61F6845BE001727EC /* DOUAudioFilePreprocessor.m in Sources */,
+				C88A46B21F6845BE001727EC /* DOUAudioAnalyzer.m in Sources */,
+				C88A46B31F6845BE001727EC /* DOUAudioAnalyzer+Default.m in Sources */,
 				C8E2AE1E1F659A870015F133 /* ViewController.swift in Sources */,
+				C88A46BB1F6845BE001727EC /* DOUAudioRenderer.m in Sources */,
+				C88A46BD1F6845BE001727EC /* DOUAudioStreamer.m in Sources */,
 				C8E2AE1C1F659A870015F133 /* AppDelegate.swift in Sources */,
 				C88FEFEF1F65AF6700A096ED /* SideViewController.swift in Sources */,
+				C88A46B41F6845BE001727EC /* DOUAudioDecoder.m in Sources */,
+				C88A46C01F6845BE001727EC /* DOUEAGLView.m in Sources */,
+				C88A46B51F6845BE001727EC /* DOUAudioEventLoop.m in Sources */,
+				C88A46B71F6845BE001727EC /* DOUAudioFileProvider.m in Sources */,
 				C809DD051F66B85400435E26 /* Common.swift in Sources */,
 				C8635C171F67CF5C00D84C7E /* HomeMusicListTableViewController.swift in Sources */,
 				C88FEFF11F65B08200A096ED /* HomeViewController.swift in Sources */,
+				C88A46B91F6845BE001727EC /* DOUAudioLPCM.m in Sources */,
+				C88A46C31F6845BE001727EC /* NSData+DOUMappedFile.m in Sources */,
+				C88A46BF1F6845BE001727EC /* DOUAudioVisualizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,11 +914,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = B7PY5JUP9A;
 				INFOPLIST_FILE = "Swift-MMP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lvwenhan.Swift-MMP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift-MMP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -777,11 +931,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = B7PY5JUP9A;
 				INFOPLIST_FILE = "Swift-MMP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lvwenhan.Swift-MMP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift-MMP-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
