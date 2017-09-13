@@ -1,7 +1,7 @@
 Swift-MMP
 ------
 
-Swift 编写的 Material Design 风格的 iOS 流媒体音乐播放器，简称 MMP。
+使用 Swift 语言编写的 Material Design 风格的 iOS 流媒体音乐播放器，简称 MMP。
 
 
 ### 开发中，敬请期待
