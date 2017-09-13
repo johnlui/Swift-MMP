@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C809DD051F66B85400435E26 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809DD041F66B85400435E26 /* Common.swift */; };
+		C81F5EE81F69417200BFEAA7 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81F5EE71F69417200BFEAA7 /* SwiftNotice.swift */; };
 		C8635C171F67CF5C00D84C7E /* HomeMusicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8635C161F67CF5C00D84C7E /* HomeMusicListTableViewController.swift */; };
 		C8635C211F67E92600D84C7E /* Pitaya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8635C1E1F67E91F00D84C7E /* Pitaya.framework */; };
 		C8635C221F67E92600D84C7E /* Pitaya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C8635C1E1F67E91F00D84C7E /* Pitaya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -192,6 +193,7 @@
 
 /* Begin PBXFileReference section */
 		C809DD041F66B85400435E26 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Common/Common.swift; sourceTree = "<group>"; };
+		C81F5EE71F69417200BFEAA7 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftNotice.swift; path = Frameworks/SwiftNotice.swift; sourceTree = "<group>"; };
 		C8635C161F67CF5C00D84C7E /* HomeMusicListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeMusicListTableViewController.swift; path = Controllers/Home/HomeMusicListTableViewController.swift; sourceTree = "<group>"; };
 		C8635C181F67E91F00D84C7E /* Pitaya.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pitaya.xcodeproj; path = Frameworks/Pitaya/Pitaya.xcodeproj; sourceTree = "<group>"; };
 		C8635C281F67E9C800D84C7E /* HomeMusicListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeMusicListTableViewCell.swift; path = Views/HomeMusicListTableViewCell.swift; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 		C88A46881F68459F001727EC /* Framewrks */ = {
 			isa = PBXGroup;
 			children = (
+				C81F5EE71F69417200BFEAA7 /* SwiftNotice.swift */,
 				C8635C531F68030000D84C7E /* Kingfisher.xcodeproj */,
 				C8635C181F67E91F00D84C7E /* Pitaya.xcodeproj */,
 				C88A46871F684596001727EC /* DOUAudioStreamer-Swift */,
@@ -739,6 +742,7 @@
 				C88A46BB1F6845BE001727EC /* DOUAudioRenderer.m in Sources */,
 				C88A46BD1F6845BE001727EC /* DOUAudioStreamer.m in Sources */,
 				C8E2AE1C1F659A870015F133 /* AppDelegate.swift in Sources */,
+				C81F5EE81F69417200BFEAA7 /* SwiftNotice.swift in Sources */,
 				C88FEFEF1F65AF6700A096ED /* SideViewController.swift in Sources */,
 				C88A46B41F6845BE001727EC /* DOUAudioDecoder.m in Sources */,
 				C88A46C01F6845BE001727EC /* DOUEAGLView.m in Sources */,
