@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0WX-Tp-fLV">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="XHU-fc-MLL">
+            <objects>
+                <controller id="0WX-Tp-fLV" customClass="InterfaceController" customModule="watch" customModuleProvider="target">
+                    <items>
+                        <label width="121" height="146" alignment="center" text="open player page  of Swift-MMP  in your iPhone" textAlignment="center" numberOfLines="0" id="IaD-HE-0FN">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <imageView width="96" height="96" alignment="center" hidden="YES" image="small_clock" id="db1-Iy-Wzg"/>
+                        <button width="32" height="32" alignment="center" verticalAlignment="center" hidden="YES" backgroundImage="play" id="pc7-6z-rlr">
+                            <connections>
+                                <action selector="mainButtonBeTapped" destination="0WX-Tp-fLV" id="bdD-6o-75x"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="avatarImage" destination="db1-Iy-Wzg" id="TLm-Bu-0rR"/>
+                        <outlet property="hintLabel" destination="IaD-HE-0FN" id="9to-Rz-7sZ"/>
+                        <outlet property="mainButton" destination="pc7-6z-rlr" id="2LU-dd-0fN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="23" y="100"/>
+        </scene>
+    </scenes>
+</document>

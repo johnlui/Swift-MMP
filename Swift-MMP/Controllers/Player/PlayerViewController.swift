@@ -196,7 +196,7 @@ class PlayerViewController: UIViewController {
                         }
                     }
                     if let image = self.albumImageView.image {
-                        dictionaryToWatch["artwork"] = UIImageJPEGRepresentation(image.resizeToSize(CGSize(width: 64, height: 64)), 0.3)
+                        dictionaryToWatch["artwork"] = UIImageJPEGRepresentation(image.resizeToSize(CGSize(width: 128, height: 128)), 0.3)
                     }
                     
                     if let session = self.session {
