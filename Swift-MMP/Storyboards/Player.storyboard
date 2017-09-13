@@ -94,7 +94,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FxF-w1-0Zn">
                                 <rect key="frame" x="0.0" y="80" width="375" height="387"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TnX-Eq-Yx9">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TnX-Eq-Yx9">
                                         <rect key="frame" x="48" y="54" width="278" height="278"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="TnX-Eq-Yx9" secondAttribute="height" id="8HG-00-Y7d"/>
@@ -122,11 +122,20 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BEJ-Q2-aCC">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lfo-Fg-Jhy">
+                                        <rect key="frame" x="24" y="95" width="327" height="2"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.5"/>
+                                        <color key="progressTintColor" red="0.89280849360000003" green="0.89280849360000003" blue="0.89280849360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" red="0.96702724360000003" green="0.96702724360000003" blue="0.96702724360000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                    <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BEJ-Q2-aCC">
                                         <rect key="frame" x="22" y="81" width="331" height="31"/>
                                         <color key="tintColor" red="0.96714633703231812" green="0.13131046295166016" blue="0.45371347665786743" alpha="0.89670444542253525" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="0.76012323943661975" colorSpace="calibratedWhite"/>
                                         <color key="thumbTintColor" red="1" green="0.13675450609550177" blue="0.5025000582370156" alpha="0.89670444542253525" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="musicPlayingProgressSliderValueChanged:" destination="3tO-cz-DmF" eventType="valueChanged" id="JHF-FZ-4hq"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXT-lu-2Cj">
                                         <rect key="frame" x="24" y="111" width="28.5" height="16"/>
@@ -159,9 +168,9 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WL-7S-ekQ">
                                                 <rect key="frame" x="131" y="0.0" width="65" height="46"/>
-                                                <state key="normal" image="ic_pause_white_36dp"/>
+                                                <state key="normal" image="ic_play_white_36dp"/>
                                                 <connections>
-                                                    <action selector="pauseButtonBeTapped:" destination="3tO-cz-DmF" eventType="touchUpInside" id="PC4-Y1-ViB"/>
+                                                    <action selector="playAndPauseButtonBeTapped:" destination="3tO-cz-DmF" eventType="touchUpInside" id="oio-BF-HMB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-nc-cdE">
@@ -192,7 +201,9 @@
                                     <constraint firstItem="BEJ-Q2-aCC" firstAttribute="centerX" secondItem="HTU-9R-lgm" secondAttribute="centerX" id="1Dk-cV-UhM"/>
                                     <constraint firstItem="qXT-lu-2Cj" firstAttribute="top" secondItem="BEJ-Q2-aCC" secondAttribute="bottom" id="9A4-ly-GBJ"/>
                                     <constraint firstItem="sQT-Pk-PGu" firstAttribute="leading" secondItem="kIk-s6-ShG" secondAttribute="leading" id="Fbb-lh-O9X"/>
+                                    <constraint firstItem="Lfo-Fg-Jhy" firstAttribute="centerY" secondItem="BEJ-Q2-aCC" secondAttribute="centerY" id="HlK-Li-k1Q"/>
                                     <constraint firstItem="0wd-3K-jTZ" firstAttribute="leading" secondItem="BEJ-Q2-aCC" secondAttribute="leading" id="IHm-OE-6gW"/>
+                                    <constraint firstItem="Lfo-Fg-Jhy" firstAttribute="leading" secondItem="BEJ-Q2-aCC" secondAttribute="leading" id="TTb-uY-mox"/>
                                     <constraint firstItem="0wd-3K-jTZ" firstAttribute="top" secondItem="jDd-Gj-D0w" secondAttribute="bottom" constant="8" id="Wzf-Pt-SAR"/>
                                     <constraint firstItem="BEJ-Q2-aCC" firstAttribute="leading" secondItem="kIk-s6-ShG" secondAttribute="leading" id="bhR-MA-xTG"/>
                                     <constraint firstItem="kIk-s6-ShG" firstAttribute="top" secondItem="HTU-9R-lgm" secondAttribute="top" constant="8" id="gcV-sh-AIb"/>
@@ -205,7 +216,13 @@
                                     <constraint firstItem="qXT-lu-2Cj" firstAttribute="leading" secondItem="BEJ-Q2-aCC" secondAttribute="leading" id="weB-Zg-zUT"/>
                                     <constraint firstItem="0wd-3K-jTZ" firstAttribute="trailing" secondItem="BEJ-Q2-aCC" secondAttribute="trailing" id="wpd-A4-b8R"/>
                                     <constraint firstItem="kIk-s6-ShG" firstAttribute="leading" secondItem="HTU-9R-lgm" secondAttribute="leading" constant="24" id="xFz-Pa-Wh2"/>
+                                    <constraint firstItem="Lfo-Fg-Jhy" firstAttribute="trailing" secondItem="BEJ-Q2-aCC" secondAttribute="trailing" id="yhC-Zo-lXE"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Lfo-Fg-Jhy"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -231,7 +248,10 @@
                         <outlet property="albumLabel" destination="sQT-Pk-PGu" id="Y9N-Qq-4Jm"/>
                         <outlet property="backView" destination="HF7-hW-DZ3" id="g6S-xE-FSZ"/>
                         <outlet property="backgroundImageView" destination="XRC-ld-yNc" id="2uD-yx-Hpd"/>
+                        <outlet property="cacheProgressView" destination="Lfo-Fg-Jhy" id="Pb2-vP-VaE"/>
                         <outlet property="leftTimeLabel" destination="jDd-Gj-D0w" id="usQ-cT-167"/>
+                        <outlet property="musicPlayingProgressSlider" destination="BEJ-Q2-aCC" id="7da-IQ-MKw"/>
+                        <outlet property="playButton" destination="4WL-7S-ekQ" id="yDN-bk-2au"/>
                         <outlet property="songNameLabel" destination="kIk-s6-ShG" id="DF2-gw-xmX"/>
                         <outlet property="statedTimeLabel" destination="qXT-lu-2Cj" id="aVh-OI-hdc"/>
                     </connections>
@@ -247,7 +267,7 @@
         <image name="ic_action_search" width="32" height="32"/>
         <image name="ic_favorite_white_48dp" width="24" height="24"/>
         <image name="ic_menu_moreoverflow_mtrl_alpha" width="24" height="24"/>
-        <image name="ic_pause_white_36dp" width="36" height="36"/>
+        <image name="ic_play_white_36dp" width="36" height="36"/>
         <image name="ic_shuffle_white_36dp" width="36" height="36"/>
         <image name="ic_skip_next_white_36dp" width="36" height="36"/>
         <image name="ic_skip_previous_white_36dp" width="36" height="36"/>

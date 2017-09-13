@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C809DD051F66B85400435E26 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C809DD041F66B85400435E26 /* Common.swift */; };
+		C81386C11F6969A6004C3ECE /* NowPlayingInfoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81386C01F6969A6004C3ECE /* NowPlayingInfoCenter.swift */; };
+		C81386CF1F696AD3004C3ECE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81386CE1F696AD3004C3ECE /* Reachability.swift */; };
+		C81386D21F696EB1004C3ECE /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81386D11F696EB1004C3ECE /* UIImage.swift */; };
 		C81F5EE81F69417200BFEAA7 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81F5EE71F69417200BFEAA7 /* SwiftNotice.swift */; };
 		C81F5F1D1F69464500BFEAA7 /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = C81F5EF71F69464500BFEAA7 /* DOUAudioAnalyzer.m */; };
 		C81F5F1E1F69464500BFEAA7 /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = C81F5EF91F69464500BFEAA7 /* DOUAudioAnalyzer+Default.m */; };
@@ -193,6 +196,9 @@
 
 /* Begin PBXFileReference section */
 		C809DD041F66B85400435E26 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Common/Common.swift; sourceTree = "<group>"; };
+		C81386C01F6969A6004C3ECE /* NowPlayingInfoCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NowPlayingInfoCenter.swift; path = Common/NowPlayingInfoCenter.swift; sourceTree = "<group>"; };
+		C81386CE1F696AD3004C3ECE /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Frameworks/Reachability.swift; sourceTree = "<group>"; };
+		C81386D11F696EB1004C3ECE /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		C81F5EE71F69417200BFEAA7 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftNotice.swift; path = Frameworks/SwiftNotice.swift; sourceTree = "<group>"; };
 		C81F5EF51F69464500BFEAA7 /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioAnalyzer_Private.h; path = Frameworks/DOUAudioStreamerSwift/DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
 		C81F5EF61F69464500BFEAA7 /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DOUAudioAnalyzer.h; path = Frameworks/DOUAudioStreamerSwift/DOUAudioAnalyzer.h; sourceTree = "<group>"; };
@@ -290,8 +296,17 @@
 			isa = PBXGroup;
 			children = (
 				C809DD041F66B85400435E26 /* Common.swift */,
+				C81386C01F6969A6004C3ECE /* NowPlayingInfoCenter.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		C81386D01F696EA0004C3ECE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C81386D11F696EB1004C3ECE /* UIImage.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		C8635C151F67CF3300D84C7E /* Home */ = {
@@ -398,6 +413,7 @@
 		C88A46881F68459F001727EC /* Framewrks */ = {
 			isa = PBXGroup;
 			children = (
+				C81386CE1F696AD3004C3ECE /* Reachability.swift */,
 				C81F5EE71F69417200BFEAA7 /* SwiftNotice.swift */,
 				C8635C531F68030000D84C7E /* Kingfisher.xcodeproj */,
 				C8635C181F67E91F00D84C7E /* Pitaya.xcodeproj */,
@@ -439,6 +455,7 @@
 		C8E2AE1A1F659A870015F133 /* Swift-MMP */ = {
 			isa = PBXGroup;
 			children = (
+				C81386D01F696EA0004C3ECE /* Extensions */,
 				C809DD031F66B82C00435E26 /* Common */,
 				C88FEFED1F65AF3600A096ED /* Controllers */,
 				C8635C261F67E97100D84C7E /* Views */,
@@ -734,6 +751,7 @@
 				C81F5F2D1F69464500BFEAA7 /* DOUSimpleHTTPRequest.m in Sources */,
 				C81F5F2B1F69464500BFEAA7 /* DOUEAGLView.m in Sources */,
 				C81F5F2C1F69464500BFEAA7 /* DOUMPMediaLibraryAssetLoader.m in Sources */,
+				C81386CF1F696AD3004C3ECE /* Reachability.swift in Sources */,
 				C88A46841F6841FB001727EC /* PlayerViewController.swift in Sources */,
 				C8E2AE1E1F659A870015F133 /* ViewController.swift in Sources */,
 				C8E2AE1C1F659A870015F133 /* AppDelegate.swift in Sources */,
@@ -747,8 +765,10 @@
 				C81F5F2A1F69464500BFEAA7 /* DOUAudioVisualizer.m in Sources */,
 				C81F5F221F69464500BFEAA7 /* DOUAudioFileProvider.m in Sources */,
 				C81F5F241F69464500BFEAA7 /* DOUAudioLPCM.m in Sources */,
+				C81386D21F696EB1004C3ECE /* UIImage.swift in Sources */,
 				C81F5F1F1F69464500BFEAA7 /* DOUAudioDecoder.m in Sources */,
 				C8635C171F67CF5C00D84C7E /* HomeMusicListTableViewController.swift in Sources */,
+				C81386C11F6969A6004C3ECE /* NowPlayingInfoCenter.swift in Sources */,
 				C81F5F211F69464500BFEAA7 /* DOUAudioFilePreprocessor.m in Sources */,
 				C88FEFF11F65B08200A096ED /* HomeViewController.swift in Sources */,
 				C81F5F201F69464500BFEAA7 /* DOUAudioEventLoop.m in Sources */,
@@ -859,7 +879,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -904,7 +924,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

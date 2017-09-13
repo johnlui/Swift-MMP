@@ -9,7 +9,8 @@
 import UIKit
 
 struct Common {
-    // Swift 中， static let 才是真正可靠好用的单例模式
+    
+    // REAL Singleton!
     static let screenWidth = UIScreen.main.bounds.maxX
     static let screenHeight = UIScreen.main.bounds.maxY
     static let rootViewController = UIApplication.shared.keyWindow?.rootViewController as! ViewController
@@ -19,17 +20,17 @@ struct Common {
     static let thumbBaseURI = Common.baseURI + "thumb/"
     
     static let songsArray = [
-        ["发如雪", "十一月的萧邦"],
-        ["夜曲", "十一月的萧邦"],
         ["夜的第七章", "依然范特西"],
+        ["夜曲", "十一月的萧邦"],
         ["听妈妈的话", "依然范特西"],
+        ["发如雪", "十一月的萧邦"],
+        ["珊瑚海", "十一月的萧邦"],
         ["简单爱", "范特西"],
         ["爱在西元前", "范特西"],
-        ["千里之外", "依然范特西"],
         ["本草纲目", "依然范特西"],
         ["双截棍", "范特西"],
+        ["千里之外", "依然范特西"],
         ["菊花台", "依然范特西"],
-        ["珊瑚海", "十一月的萧邦"],
         ["安静", "范特西"],
     ]
 }

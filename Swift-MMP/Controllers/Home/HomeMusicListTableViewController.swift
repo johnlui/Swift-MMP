@@ -45,6 +45,7 @@ class HomeMusicListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = UIStoryboard(name: "Player", bundle: nil).instantiateViewController(withIdentifier: "playerVC") as! PlayerViewController
         vc.song = Common.songsArray[indexPath.row]
+        vc.playingIndex = indexPath.row
         self.viewController.show(vc, sender: tableView.cellForRow(at: indexPath))
         tableView.deselectRow(at: indexPath, animated: true)
     }
