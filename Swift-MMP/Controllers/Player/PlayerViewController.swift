@@ -119,6 +119,9 @@ class PlayerViewController: UIViewController {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if (context == &self.kBufferingRatioKVOKey) {
             DispatchQueue.main.async {
+                if self.streamer == nil {
+                    return
+                }
                 self.cacheProgressView.setProgress(Float(self.streamer.bufferingRatio), animated: true)
                 
                 /*
@@ -151,10 +154,16 @@ class PlayerViewController: UIViewController {
             }
         } else if (context == &self.kDurationKVOKey) {
             DispatchQueue.main.async {
+                if self.streamer == nil {
+                    return
+                }
                 self.timerAction()
             }
         } else if (context == &self.kStatusKVOKey) {
             DispatchQueue.main.async {
+                if self.streamer == nil {
+                    return
+                }
                 switch self.streamer.status {
                 case .playing:
                     print("Playing")
@@ -305,7 +314,6 @@ class PlayerViewController: UIViewController {
     }
     
     func timerAction() {
-        print("timer")
         if self.streamer != nil && self.streamer.duration != 0 {
             self.musicPlayingProgressSlider.setValue(Float(self.streamer.currentTime / self.streamer.duration), animated: true)
             self.hmsFrom(seconds: Int(self.streamer.currentTime)) { minutes, seconds in
@@ -332,6 +340,7 @@ class PlayerViewController: UIViewController {
     @IBAction func gobackButtonBeTapped(_ sender: Any) {
         self.cancelStreamer()
         self.timer.invalidate()
+        self.clearAllNotice()
         self.dismiss(animated: true, completion: nil)
     }
 

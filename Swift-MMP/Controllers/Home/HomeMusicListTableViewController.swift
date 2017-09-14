@@ -51,6 +51,8 @@ class HomeMusicListTableViewController: UITableViewController {
     }
 
     @IBAction func randomButtonBeTapped(_ sender: Any) {
+        let index = Int(Int(arc4random()) % Common.songsArray.count)
+        self.tableView(self.tableView, didSelectRowAt: IndexPath(row: index, section: 0))
     }
 
 }

@@ -48,7 +48,6 @@ class ViewController: UIViewController {
     }
     
     func showSide() {
-        print("show")
         UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             self.sideViewController.view.center = CGPoint(x: Common.screenWidth * self.sideViewWidthMultiple * 0.5, y: self.sideViewController.view.center.y)
             self.blackCover.center = CGPoint(x: self.view.center.x + Common.screenWidth * self.sideViewWidthMultiple, y: self.sideViewController.view.center.y)
@@ -59,7 +58,6 @@ class ViewController: UIViewController {
     }
     
     func hideSide() {
-        print("hide")
         UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             self.sideViewController.view.center = CGPoint(x: Common.screenWidth * self.sideViewWidthMultiple * -0.5, y: self.sideViewController.view.center.y)
             self.blackCover.center = self.view.center

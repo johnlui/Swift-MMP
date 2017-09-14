@@ -684,6 +684,11 @@
 						DevelopmentTeam = B7PY5JUP9A;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C8E2AE2B1F659A870015F133 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -1316,6 +1321,7 @@
 				C8E3FB551F69A51200271759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8E3FB641F69A51200271759 /* Build configuration list for PBXNativeTarget "watch" */ = {
 			isa = XCConfigurationList;
@@ -1324,6 +1330,7 @@
 				C8E3FB531F69A51200271759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

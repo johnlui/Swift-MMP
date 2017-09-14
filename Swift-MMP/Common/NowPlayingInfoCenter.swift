@@ -68,17 +68,27 @@ class NowPlayingInfoCenter: NSObject {
     }
     
     func play(_ event: MPRemoteCommandEvent) {
+        if self.musicPlayerVC.streamer == nil {
+            return
+        }
         self.musicPlayerVC.streamer.play()
     }
     func pause(_ event: MPRemoteCommandEvent) {
+        if self.musicPlayerVC.streamer == nil {
+            return
+        }
         self.musicPlayerVC.streamer.pause()
     }
     func previous(_ event: MPRemoteCommandEvent) {
-        print("prevButtonBeTapped")
+        if self.musicPlayerVC.streamer == nil {
+            return
+        }
         self.musicPlayerVC.prevButtonBeTapped(self)
     }
     func next(_ event: MPRemoteCommandEvent) {
-        print("nextButtonBeTapped")
+        if self.musicPlayerVC.streamer == nil {
+            return
+        }
         self.musicPlayerVC.nextButtonBeTapped(self)
     }
 }
