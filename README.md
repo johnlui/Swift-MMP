@@ -26,7 +26,13 @@ Material-design Music Player written by Swift for iOS. Powered by [DOUAudioStrea
 
 ## Examples
 
+### iPhone
+
 ![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
+
+### Apple Watch
+
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo-watch.jpg)
 
 ## Requirements
 
@@ -54,7 +60,13 @@ Swift-MMP is open-sourced software licensed under the MIT license.
 
 ## 示例
 
+### 手机
+
 ![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
+
+### Apple Watch
+
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo-watch.jpg)
 
 ## 环境要求
 
