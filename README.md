@@ -11,7 +11,7 @@
 
 <br>
 
-Material-design Music Player written by Swift on iOS. Powered by [DOUAudioStreamer-Swift](https://github.com/johnlui/DOUAudioStreamer-Swift).
+Material-design Music Player written by Swift for iOS. Powered by [DOUAudioStreamer-Swift](https://github.com/johnlui/DOUAudioStreamer-Swift).
 
 <br>
 
