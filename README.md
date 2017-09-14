@@ -1,11 +1,69 @@
-Swift-MMP
-------
+<p align="center">
+    <a href="https://github.com/johnlui/Swift-MMP"><img src="https://github.com/johnlui/Swift-MMP/blob/master/assets/Swift-MMP.jpg"></a>
+</p>
 
-使用 Swift 语言编写的 Material Design 风格的 iOS 流媒体音乐播放器，简称 MMP。
+<p align="center">
+    <a href="https://github.com/johnlui/Swift-MMP"><img src="https://img.shields.io/badge/platform-ios-lightgrey.svg"></a>
+    <a href="https://github.com/johnlui/Swift-MMP"><img src="https://img.shields.io/github/license/johnlui/Swift-MMP.svg?style=flat"></a>
+    <a href="https://github.com/johnlui/Swift-MMP"><img src="https://img.shields.io/badge/language-Swift%203-orange.svg"></a>
+    <a href="https://travis-ci.org/johnlui/Swift-MMP"><img src="https://img.shields.io/travis/johnlui/Swift-MMP.svg"></a>
+</p>
 
+<br>
 
-### 开发中，敬请期待
+Material-design Music Player written by Swift on iOS. Powered by [DOUAudioStreamer-Swift](https://github.com/johnlui/DOUAudioStreamer-Swift).
 
+<br>
+
+### [中文介绍](#中文介绍)
+
+## Examples
+
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/screenshoots.jpg)
+
+## Features
+
+- [x] Stream audio playing
+- [x] Lock screen control enabled
+- [x] Apple Watch control enabled
+- [x] Elegant UI
+
+## Requirements
+
+* iOS 9.3+
+* Xcode 8
+
+## Contribution
+
+You are welcome to fork and submit pull requests.
+
+## License
+
+Swift-MMP is open-sourced software licensed under the MIT license.
+
+# 中文介绍
+
+使用 Swift 语言编写的 Material Design 风格的 iOS 流媒体音乐播放器，简称 MMP。基于 [DOUAudioStreamer-Swift](https://github.com/johnlui/DOUAudioStreamer-Swift)。
+
+## 示例
+
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/screenshoots.jpg)
+
+## Features
+
+- [x] 完全流媒体播放
+- [x] 锁屏信息展示及控制
+- [x] Apple Watch 展示及控制
+- [x] 界面简介优雅
+
+## 环境要求
+
+* iOS 9.3+
+* Xcode 8
+
+## 参与开源
+
+欢迎提交 issue 和 PR，大门永远向所有人敞开。
 
 ## 开源协议
 
