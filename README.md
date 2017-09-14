@@ -15,7 +15,7 @@ Material-design Music Player written by Swift for iOS. Powered by [DOUAudioStrea
 
 <br>
 
-### [中文介绍](#中文介绍)
+### [中文简介](#中文介绍)
 
 ## Features
 
