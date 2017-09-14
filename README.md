@@ -17,16 +17,16 @@ Material-design Music Player written by Swift on iOS. Powered by [DOUAudioStream
 
 ### [中文介绍](#中文介绍)
 
-## Examples
-
-![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
-
 ## Features
 
 - [x] Stream audio playing
 - [x] Lock screen control enabled
 - [x] Apple Watch control enabled
 - [x] Elegant UI
+
+## Examples
+
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
 
 ## Requirements
 
@@ -45,16 +45,16 @@ Swift-MMP is open-sourced software licensed under the MIT license.
 
 使用 Swift 语言编写的 Material Design 风格的 iOS 流媒体音乐播放器，简称 MMP。基于 [DOUAudioStreamer-Swift](https://github.com/johnlui/DOUAudioStreamer-Swift)。
 
-## 示例
-
-![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
-
 ## Features
 
 - [x] 完全流媒体播放
 - [x] 锁屏信息展示及控制
 - [x] Apple Watch 展示及控制
 - [x] 界面简介优雅
+
+## 示例
+
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
 
 ## 环境要求
 
