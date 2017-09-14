@@ -19,7 +19,7 @@ Material-design Music Player written by Swift on iOS. Powered by [DOUAudioStream
 
 ## Examples
 
-![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/screenshoots.jpg)
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
 
 ## Features
 
@@ -47,7 +47,7 @@ Swift-MMP is open-sourced software licensed under the MIT license.
 
 ## 示例
 
-![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/screenshoots.jpg)
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
 
 ## Features
 
