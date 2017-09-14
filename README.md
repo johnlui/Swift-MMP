@@ -15,7 +15,7 @@ Material-design Music Player written by Swift for iOS. Powered by [DOUAudioStrea
 
 <br>
 
-### [中文简介](#中文介绍)
+### [中文介绍](#介绍)
 
 ## Features
 
@@ -41,7 +41,7 @@ You are welcome to fork and submit pull requests.
 
 Swift-MMP is open-sourced software licensed under the MIT license.
 
-# 中文介绍
+# 介绍
 
 使用 Swift 语言编写的 Material Design 风格的 iOS 流媒体音乐播放器，简称 MMP。基于 [DOUAudioStreamer-Swift](https://github.com/johnlui/DOUAudioStreamer-Swift)。
 
