@@ -56,7 +56,7 @@ Swift-MMP is open-sourced software licensed under the MIT license.
 - [x] 完全流媒体播放
 - [x] 锁屏信息展示及控制
 - [x] Apple Watch 展示及控制
-- [x] 界面简介优雅
+- [x] 界面简洁优雅
 
 ## 示例
 
