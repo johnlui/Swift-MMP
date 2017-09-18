@@ -28,7 +28,7 @@ Stream Material-design Music Player written by Swift for iOS. Powered by [DOUAud
 
 ### iPhone
 
-![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo1.jpg)
 
 ### Apple Watch
 
@@ -62,7 +62,7 @@ Swift-MMP is open-sourced software licensed under the MIT license.
 
 ### 手机
 
-![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo.jpg)
+![demo](https://github.com/johnlui/Swift-MMP/blob/master/assets/demo1.jpg)
 
 ### Apple Watch
 

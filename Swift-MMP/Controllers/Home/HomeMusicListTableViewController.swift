@@ -12,6 +12,7 @@ import Kingfisher
 class HomeMusicListTableViewController: UITableViewController {
     
     weak var viewController: ViewController!
+    weak var homeViewController: HomeViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +54,14 @@ class HomeMusicListTableViewController: UITableViewController {
     @IBAction func randomButtonBeTapped(_ sender: Any) {
         let index = Int(Int(arc4random()) % Common.songsArray.count)
         self.tableView(self.tableView, didSelectRowAt: IndexPath(row: index, section: 0))
+    }
+    @IBAction func moreButtonBeTapped(_ sender: Any) {
+        if let button = sender as? UIButton,
+            let y = button.superview?.convert(button.frame.origin, to: nil).y {
+            self.homeViewController.menuContainerViewTopConstraint.constant = y + 20
+            self.homeViewController.menuContainerView.layoutIfNeeded()
+            self.homeViewController.menuContainerView.isHidden = self.homeViewController.menuContainerView.isHidden ? false : true
+        }
     }
 
 }

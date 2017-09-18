@@ -17,10 +17,17 @@ class HomeViewController: UIViewController {
     @IBOutlet var pageTitleButtonCollection: [UIButton]!
     @IBOutlet weak var scrollBarScrollView: UIScrollView!
     @IBOutlet weak var contentScrollView: UIScrollView!
+    @IBOutlet weak var menuContainerView: UIView!
+    @IBOutlet weak var menuContainerViewTopConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let shadowPath = UIBezierPath(rect: self.menuContainerView.bounds)
+        self.menuContainerView.layer.masksToBounds = false
+        self.menuContainerView.layer.shadowColor = UIColor.black.cgColor
+        self.menuContainerView.layer.shadowOffset = CGSize(width: 2, height: 2)
+        self.menuContainerView.layer.shadowOpacity = 0.6
+        self.menuContainerView.layer.shadowPath = shadowPath.cgPath
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,6 +60,7 @@ class HomeViewController: UIViewController {
         if segue.identifier == "homeMusicListSegue" {
             if let a = segue.destination as? HomeMusicListTableViewController {
                 a.viewController = self.viewController
+                a.homeViewController = self
             }
         }
     }
