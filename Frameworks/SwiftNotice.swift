@@ -314,7 +314,7 @@ class SwiftNotice: NSObject {
     }
   
     // fix https://github.com/johnlui/SwiftNotice/issues/2
-    static func hideNotice(_ sender: AnyObject) {
+    @objc static func hideNotice(_ sender: AnyObject) {
         if let window = sender as? UIWindow {
           
           if let v = window.subviews.first {

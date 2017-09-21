@@ -18,13 +18,13 @@ class NowPlayingInfoCenter: NSObject {
         for i in asset.metadata {
             if let key = i.commonKey {
                 switch key {
-                case AVMetadataCommonKeyArtwork:
+                case AVMetadataKey.commonKeyArtwork:
                     info[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(image: UIImage(data: i.value as! Data)!)
-                case AVMetadataCommonKeyArtist:
+                case AVMetadataKey.commonKeyArtist:
                     info[MPMediaItemPropertyArtist] = i.value?.description as AnyObject?
-                case MPMediaItemPropertyAlbumTitle:
+                case AVMetadataKey.id3MetadataKeyAlbumTitle:
                     info[MPMediaItemPropertyAlbumTitle] = i.value?.description as AnyObject?
-                case AVMetadataCommonKeyTitle:
+                case AVMetadataKey.commonKeyTitle:
                     info[MPMediaItemPropertyTitle] = i.value?.description as AnyObject?
                 default:
                     break
@@ -67,25 +67,25 @@ class NowPlayingInfoCenter: NSObject {
         self.mprcNext.addTarget(self, action: #selector(next(_:)))
     }
     
-    func play(_ event: MPRemoteCommandEvent) {
+    @objc func play(_ event: MPRemoteCommandEvent) {
         if self.musicPlayerVC.streamer == nil {
             return
         }
         self.musicPlayerVC.streamer.play()
     }
-    func pause(_ event: MPRemoteCommandEvent) {
+    @objc func pause(_ event: MPRemoteCommandEvent) {
         if self.musicPlayerVC.streamer == nil {
             return
         }
         self.musicPlayerVC.streamer.pause()
     }
-    func previous(_ event: MPRemoteCommandEvent) {
+    @objc func previous(_ event: MPRemoteCommandEvent) {
         if self.musicPlayerVC.streamer == nil {
             return
         }
         self.musicPlayerVC.prevButtonBeTapped(self)
     }
-    func next(_ event: MPRemoteCommandEvent) {
+    @objc func next(_ event: MPRemoteCommandEvent) {
         if self.musicPlayerVC.streamer == nil {
             return
         }

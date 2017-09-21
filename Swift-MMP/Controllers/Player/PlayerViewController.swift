@@ -25,7 +25,7 @@ class AudioStreamFile: NSObject, DOUAudioFile {
 
 class PlayerViewController: UIViewController {
     
-    let session : WCSession? = WCSession.isSupported() ? WCSession.default() : nil
+    let session : WCSession? = WCSession.isSupported() ? WCSession.default : nil
     
     var nowPlayingInfoCenter = NowPlayingInfoCenter()
     
@@ -102,7 +102,9 @@ class PlayerViewController: UIViewController {
         let reachability = Reachability()!
         
         reachability.whenReachable = { reachability in
-            self.refreshPlayer()
+            DispatchQueue.main.async {
+                self.refreshPlayer()
+            }
         }
         reachability.whenUnreachable = { reachability in
             DispatchQueue.main.async {
@@ -192,7 +194,7 @@ class PlayerViewController: UIViewController {
                         let asset = AVURLAsset(url: URL(fileURLWithPath: truePath))
                         self.nowPlayingInfoCenter.setNowPlayingInfo(asset)
                         for i in asset.metadata {
-                            if i.commonKey == "artwork" {
+                            if i.commonKey == AVMetadataKey.commonKeyArtwork {
                                 self.hasArtwork = true
                                 if let data = i.value as? Data {
                                     self.albumImageView.image = UIImage(data: data)
@@ -226,7 +228,9 @@ class PlayerViewController: UIViewController {
                     }
                 case .finished:
                     self.playingIndex += 1
-                    self.refreshPlayer()
+                    DispatchQueue.main.async {
+                        self.refreshPlayer()
+                    }
                 case .error:
                     self.noticeError("error", autoClear: true, autoClearTime: 3)
                 case .buffering:
@@ -313,7 +317,7 @@ class PlayerViewController: UIViewController {
         return URL(string: "a")!
     }
     
-    func timerAction() {
+    @objc func timerAction() {
         if self.streamer != nil && self.streamer.duration != 0 {
             self.musicPlayingProgressSlider.setValue(Float(self.streamer.currentTime / self.streamer.duration), animated: true)
             self.hmsFrom(seconds: Int(self.streamer.currentTime)) { minutes, seconds in

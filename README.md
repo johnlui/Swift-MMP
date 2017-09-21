@@ -37,7 +37,7 @@ Stream Material-design Music Player written by Swift for iOS. Powered by [DOUAud
 ## Requirements
 
 * iOS 9.3+
-* Xcode 8
+* Xcode 9 (Swift 4)
 
 ## Contribution
 
@@ -71,7 +71,7 @@ Swift-MMP is open-sourced software licensed under the MIT license.
 ## 环境要求
 
 * iOS 9.3+
-* Xcode 8
+* Xcode 9 (Swift 4)
 
 ## 参与开源
 

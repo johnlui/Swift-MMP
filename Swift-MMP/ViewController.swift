@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func hideSide() {
+    @objc func hideSide() {
         UIView.animate(withDuration: 0.2, delay: 0, options: UIViewAnimationOptions.curveEaseInOut, animations: {
             self.sideViewController.view.center = CGPoint(x: Common.screenWidth * self.sideViewWidthMultiple * -0.5, y: self.sideViewController.view.center.y)
             self.blackCover.center = self.view.center

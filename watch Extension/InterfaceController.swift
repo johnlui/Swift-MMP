@@ -13,7 +13,7 @@ import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
     
-    let session: WCSession? = WCSession.isSupported() ? WCSession.default() : nil
+    let session: WCSession? = WCSession.isSupported() ? WCSession.default : nil
     
     @IBOutlet var hintLabel: WKInterfaceLabel!
     @IBOutlet var avatarImage: WKInterfaceImage!
